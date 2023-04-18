@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite1]">
+  <test parallel="none" name="Regression1(failed)">
+    <classes>
+      <class name="testngpakage.newclasstestng$Exp_Testng">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testngpakage.newclasstestng$Exp_Testng -->
+      <class name="testngpakage.testng1">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testngpakage.testng1 -->
+      <class name="testngpakage.exel_wd_tentng">
+        <methods>
+          <include name="startUp"/>
+          <include name="tc001"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testngpakage.exel_wd_tentng -->
+      <class name="testngpakage.testng3">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testngpakage.testng3 -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

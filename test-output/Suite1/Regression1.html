@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>TestNG:  Regression1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 17 17:33:20 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14663 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngpakage.exel_wd_tentng.tc001()'><b>tc001</b><br>Test class: testngpakage.exel_wd_tentng<br/>
+<a href="#Output-2096268257" onClick='toggleBox("Output-2096268257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096268257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096268257">
+admin<br/>
+nareshit<br/>
+Application Opened<br/>
+OrangeHRM - New Level of HR Management<br/>
+Login Completed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Logout
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;b19b418e60&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fe98d424-9b3b-46ad-81d5-6daa2003e194, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0, moz:accessibilityChecks: false, moz:buildID: 20230406114409, moz:debuggerAddress: 127.0.0.1:4949, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8260, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4949/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe98d424-9b3b-46ad-81d5-6daa2003e194
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testngpakage.exel_wd_tentng.tc001(exel_wd_tentng.java:50)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2096268257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2096268257'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: Logout
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;b19b418e60&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fe98d424-9b3b-46ad-81d5-6daa2003e194, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0, moz:accessibilityChecks: false, moz:buildID: 20230406114409, moz:debuggerAddress: 127.0.0.1:4949, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8260, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4949/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe98d424-9b3b-46ad-81d5-6daa2003e194
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testngpakage.exel_wd_tentng.tc001(exel_wd_tentng.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>testngpakage.exel_wd_tentng@1fb19a0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testngpakage.Testngclass.addemp()'><b>addemp</b><br>Test class: testngpakage.Testngclass</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.Testngclass@5e3d57c7</td></tr>
+<tr>
+<td title='testngpakage.newclasstestng$Exp_Testng.addemp()'><b>addemp</b><br>Test class: testngpakage.newclasstestng$Exp_Testng</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.newclasstestng$Exp_Testng@68f4865</td></tr>
+<tr>
+<td title='testngpakage.testng1.addemp()'><b>addemp</b><br>Test class: testngpakage.testng1</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.testng1@732d0d24</td></tr>
+<tr>
+<td title='testngpakage.testng3.addemp()'><b>addemp</b><br>Test class: testngpakage.testng3</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.testng3@6ee4d9ab</td></tr>
+<tr>
+<td title='testngpakage.Testngclass.delemp()'><b>delemp</b><br>Test class: testngpakage.Testngclass</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.Testngclass@5e3d57c7</td></tr>
+<tr>
+<td title='testngpakage.newclasstestng$Exp_Testng.delemp()'><b>delemp</b><br>Test class: testngpakage.newclasstestng$Exp_Testng</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.newclasstestng$Exp_Testng@68f4865</td></tr>
+<tr>
+<td title='testngpakage.testng1.delemp()'><b>delemp</b><br>Test class: testngpakage.testng1</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.testng1@732d0d24</td></tr>
+<tr>
+<td title='testngpakage.testng3.delemp()'><b>delemp</b><br>Test class: testngpakage.testng3</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.testng3@6ee4d9ab</td></tr>
+<tr>
+<td title='testngpakage.Testngclass.login()'><b>login</b><br>Test class: testngpakage.Testngclass</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.Testngclass@5e3d57c7</td></tr>
+<tr>
+<td title='testngpakage.Testngclass.logout()'><b>logout</b><br>Test class: testngpakage.Testngclass</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.Testngclass@5e3d57c7</td></tr>
+<tr>
+<td title='testngpakage.testng1.myAnnMethd()'><b>myAnnMethd</b><br>Test class: testngpakage.testng1</td>
+<td></td>
+<td>0</td>
+<td>testngpakage.testng1@732d0d24</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<test name="Regression1">
+  <groups>
+    <run>
+      <exclude name="brokenTests"  />
+      <include name="checkinTests"  />
+    </run>
+  </groups>
+  
+  <classes>
+    <class name="testng1.java">
+      <methods>
+        <include name="testMethod" />
+      </methods>
+    </class>
+  </classes>
+</test>
